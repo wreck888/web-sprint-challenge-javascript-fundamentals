@@ -26,13 +26,29 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Explain the differences between `.map`, `.reduce` and `.filter` and describe a use case for each. 
 
+    '.filter' returns a new array that filters through the results based on boolean values (true or false), while '.map' returns a new array based on data you want to be in the new array. '.reduce' is different because it gives us back a single value, takes two arguments, and requires a value to start from. 
+    '.reduce' is great for finding sums and products of values within an array. For example adding total population within an array of data. '.map' is great for going through an array of data and picking out specific data, for example all city names and states within an array of data and putting them into a new array. While .filter is great for filtering through data if they have a yes or no boolean values. For exampling using .filter to pull out all city names with sports teams within an array of data based on true or false.
+
 2. Explain the difference between a callback and a higher order function.
+
+    A higher order function is a function that recieves other functions whereas a callback function is a function that is passed into another function as an argument. Callback funcations are passed into higher order functions as arguments and higher order functions recieve callback functions as arguments.
 
 3. Explain what a closure is.
 
+    Closure happens when the inner function grabs a value from the outer function. Inother words a closure lets you access an outer function's scope from an inner fuction.
+
 4. Describe the four principles of the 'this' keyword.
 
+        The 'this' keyword's 4 principles are Global/Window binding, Implicit binding, New Binding, and Explcit binding.
+
+            Global/Window binding - the value of 'this' will return the window, the global object in node or undefined in strict mode.
+            Implicit Binding - It applies to objects with methods and when invoked the object that is standing before or "left" of the dot is what this keyword     will be refering to.
+            New Binding - When a constructor function is used with the "new" keyword, 'this' refers to the new object that is created and returned by the constructor function.
+            Explicit Binding - When we explicity bind we assign the "this" keyword using .call, .apply. or .bind
+
 5. Why do we need super() in an extended class?
+
+    We need super() in an extended class because it allows the extended class to acces and call functions of the object's parent.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
